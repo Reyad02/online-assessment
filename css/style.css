@@ -5,7 +5,7 @@
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 64px 0;
 }
@@ -28,6 +28,7 @@ button {
   padding: 10px 20px;
   font-weight: bold;
   border: 0;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -90,9 +91,14 @@ button {
   padding: 10px 15px;
   gap: 10px;
 }
+
+.gray-bg{
+  background-color: #f8fafc;
+  padding: 64px 0;
+}
 /* nav part */
 #header-part {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
 
   display: flex;
@@ -150,6 +156,11 @@ button {
   bottom: 5px;
 }
 
+#play-store{
+  width: 35px;
+  height: 35px;
+
+}
 /* sponsor */
 #sponsor{
     background-color: #f8fafc;
@@ -183,7 +194,7 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 4px;
+  gap: 20px;
   text-align: center;
 }
 
@@ -219,4 +230,45 @@ button {
 }
 #stat-3rd {
   padding: 0 16px;
+}
+
+
+/* features part 2 */
+.section-left {
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  gap: 24px;
+  text-align: left;
+}
+
+#feature-2{
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature-2-title{
+  font-weight: bold;
+}
+#feature-2-details-container{
+  display: flex ;
+  flex-direction: column;
+  gap: 32px;
+}
+.feature-2-details{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-left: 4px solid #E0E7FF;
+  padding: 24px 0 24px 24px;
+  max-width: 400px;
+}
+
+.feature-2-details:hover {
+  border-left: 4px solid #4F46E5;
+
 }
