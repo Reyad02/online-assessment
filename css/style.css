@@ -151,7 +151,10 @@ button {
 }
 
 /* sponsor */
-
+#sponsor{
+    background-color: #f8fafc;
+    padding: 64px 0;
+}
 #sponsor-row {
   display: flex;
   justify-content: center;
@@ -182,4 +185,38 @@ button {
   flex-direction: column;
   gap: 4px;
   text-align: center;
+}
+
+/* stats */
+
+#stat-section {
+  background-color: #f8fafc;
+  padding: 64px 0;
+}
+.stat-heading {
+  font-size: 60px;
+  font-weight: bold;
+}
+.stat-details {
+  font-weight: bold;
+}
+
+#stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 36px;
+  text-align: center;
+}
+
+#stat-1st {
+  padding: 0 16px;
+}
+#stat-2nd {
+  padding: 0 16px;
+  border-right: 1px solid #CBD5E1;
+  border-left: 1px solid #CBD5E1;
+}
+#stat-3rd {
+  padding: 0 16px;
 }
