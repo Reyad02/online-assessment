@@ -120,33 +120,46 @@ button {
   font-weight: bold;
 }
 
-
 /* hero part */
 #hero {
-    background: linear-gradient(to bottom, #ffffff30 50%, #8b91ee 100%);
-    padding-top: 40px;
-  }
-  #mobile-download {
-    display: flex;
-    gap: 8px;
-  }
-  
-  .mobile-advertise > div {
-    text-align: left;
-  }
-  .fa-apple {
-    font-size: 40px;
-  }
-  .fa-google-play {
-    font-size: 35px;
-  }
-  
-  #hero-images {
-    position: relative;
-  }
-  
-  #second-image {
-    position: absolute;
-    right: 0;
-    bottom: 5px;
-  }
+  background: linear-gradient(to bottom, #ffffff30 50%, #8b91ee 100%);
+  padding-top: 40px;
+}
+#mobile-download {
+  display: flex;
+  gap: 8px;
+}
+
+.mobile-advertise > div {
+  text-align: left;
+}
+.fa-apple {
+  font-size: 40px;
+}
+.fa-google-play {
+  font-size: 35px;
+}
+
+#hero-images {
+  position: relative;
+}
+
+#second-image {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+}
+
+/* sponsor */
+
+#sponsor-row {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  align-items: center;
+}
+
+.sponsor-img {
+  width: 144px;
+  height: 96px;
+}
