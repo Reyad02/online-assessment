@@ -313,20 +313,67 @@ button {
   font-weight: bold;
 }
 
-
 /* office location */
-#location-container{
+#location-container {
   display: flex;
   gap: 20px;
   margin-top: 48px;
 }
 
-.location-details{
+.location-details {
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding: 20px;
-  border: 1px  solid #E2E8F0;
+  border: 1px solid #e2e8f0;
   border-radius: 16px;
   width: 300px;
+}
+
+.fa-location-dot {
+  width: 24px;
+  height: 24px;
+}
+
+/* faq */
+
+.faq-details{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #CBD5E1;
+  cursor: pointer;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+#faq{
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+
+.faq-ques{
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  gap: 8px;
+}
+
+.faq-exact-ques{
+  flex-grow: 1;
+}
+
+
+.vanish{
+  display: none;
+}
+
+.appear{
+  display: block;
 }
