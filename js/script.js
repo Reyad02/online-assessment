@@ -29,3 +29,7 @@ faqDetails.forEach((eachFaq) => {
     }
   });
 });
+
+document.getElementById("up-container").addEventListener("click", function () {
+  document.getElementById("header-part").scrollIntoView({ behavior: "smooth" });
+});
