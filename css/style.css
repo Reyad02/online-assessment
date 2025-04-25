@@ -337,18 +337,18 @@ button {
 
 /* faq */
 
-.faq-details{
+.faq-details {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding-bottom: 16px;
-  border-bottom: 1px solid #CBD5E1;
+  border-bottom: 1px solid #cbd5e1;
   cursor: pointer;
   padding-left: 16px;
   padding-right: 16px;
 }
 
-#faq{
+#faq {
   max-width: 800px;
   margin: 0 auto;
   display: flex;
@@ -357,23 +357,72 @@ button {
   margin-top: 60px;
 }
 
-
-.faq-ques{
+.faq-ques {
   display: flex;
   align-items: center;
   font-weight: 800;
   gap: 8px;
 }
 
-.faq-exact-ques{
+.faq-exact-ques {
   flex-grow: 1;
 }
 
-
-.vanish{
+.vanish {
   display: none;
 }
 
-.appear{
+.appear {
   display: block;
+}
+
+/* mobile-app-advertisement  */
+
+#mobile-app-advertisement {
+  background-color: #eef2ff;
+  /* padding-top: 64px; */
+  position: relative;
+
+}
+
+#mobile-ad-title {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+#mobile-ad-description {
+  font-weight: 700;
+}
+
+#mobile-ad-deatils {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* border: 1px solid black; */
+  width: 40%;
+}
+
+#mobile-ad-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* padding-top: 64px; */
+  align-items: center;
+  position: relative;
+}
+
+#images-container {
+  position: relative;
+  /* border: 1px solid red; */
+  flex-grow: 1;
+
+}
+
+#mobile-2nd-img {
+  position: absolute;
+  right: -22%;
+  top: 0;
+  /* top: 20px; 
+  right: 0px;  */
 }
