@@ -33,3 +33,15 @@ faqDetails.forEach((eachFaq) => {
 document.getElementById("up-container").addEventListener("click", function () {
   document.getElementById("header-part").scrollIntoView({ behavior: "smooth" });
 });
+
+const burgerMenu = document.querySelector(".burger");
+const nav = document.querySelector("#burger-container>nav>#navigation");
+burger.addEventListener("click", () => {
+  if ((nav.style.display === "flex")) {
+    nav.style.display = "none";
+  } else {
+    nav.style.display = "flex";
+
+  }
+  console.log("click");
+});

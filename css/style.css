@@ -127,7 +127,11 @@ button {
 }
 
 #navigation > li > a:hover {
-color: #4f46e5;
+  color: #4f46e5;
+}
+
+#burger-container{
+  display: none;
 }
 
 /* hero part */
@@ -339,6 +343,9 @@ color: #4f46e5;
   height: 24px;
 }
 
+.location-details > p {
+  font-weight: bold;
+}
 /* faq */
 
 .faq-details {
@@ -385,7 +392,6 @@ color: #4f46e5;
 #mobile-app-advertisement {
   background-color: #eef2ff;
   position: relative;
-
 }
 
 #mobile-ad-title {
@@ -416,7 +422,6 @@ color: #4f46e5;
 #images-container {
   position: relative;
   flex-grow: 1;
-
 }
 
 #mobile-2nd-img {
@@ -424,6 +429,15 @@ color: #4f46e5;
   right: -22%;
   top: 0;
 }
+
+#mobile-img-web{
+  padding-top: 96px;
+}
+
+#mobile-alternate,#mobile-alternate-1 {
+  display: none;
+}
+
 
 
 /* footer */
@@ -451,18 +465,221 @@ color: #4f46e5;
   color: #4f46e5;
 }
 
-#footer-last-line{
+#footer-last-line {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 40px;
   padding-top: 40px;
-  border-top: 1px solid #CBD5E1;
+  border-top: 1px solid #cbd5e1;
 }
 
-#up-container{
+#up-container {
   padding: 16px;
-  border: 1px solid #CBD5E1;
+  border: 1px solid #cbd5e1;
   border-radius: 100%;
   cursor: pointer;
+}
+
+/* mobile veiw */
+
+@media screen and ( max-width: 576px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  #header-part,
+  #hero-details,
+  #stat-container,
+  .section-left,
+  #feature-2,
+  #faq,
+  #mobile-ad-deatils,
+  #footer-last-line {
+    padding: 16px;
+  }
+  /* header */
+
+
+  #burger{
+    position: absolute;
+    right: 0;
+    margin-right: 16px;
+  }
+
+  #burger-container{
+    display: block;
+  }
+
+  #burger-container>nav>#navigation{
+    flex-direction: column;
+    align-items: start;
+    margin-top: 16px;
+    display: none;
+  }
+
+
+  #header-part{
+    align-items: start;
+    gap: 40px;
+  }
+
+  #web-nav {
+    display: none;
+  }
+  header > div {
+    display: none;
+  }
+
+  /* hero */
+  #app-store,
+  #google-play {
+    font-size: 18px;
+  }
+  .fa-apple {
+    font-size: 28px;
+  }
+  #play-store {
+    width: 25px;
+    height: 25px;
+  }
+
+  .mobile-advertise > div > p {
+    font-size: 12px;
+  }
+
+  #first-image {
+    width: 420px;
+  }
+  #second-image {
+    width: 150px;
+    position: absolute;
+    right: 14%;
+    bottom: -10px;
+  }
+
+  /* sponsor  */
+  #sponsor-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 0;
+    place-items: center;
+  }
+  #sponsor-row > div > img {
+    width: 80px;
+  }
+
+  /* features */
+  #features {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 16px;
+    margin-top: 60px;
+  }
+
+  /* stats */
+
+  #stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 36px;
+    text-align: center;
+  }
+  #stat-1st {
+    padding-bottom: 16px;
+  }
+  #stat-2nd {
+    padding: 0 16px;
+    border-top: 1px solid #cbd5e1;
+    border-bottom: 1px solid #cbd5e1;
+    border-right: 0;
+    border-left: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+  }
+  #stat-3rd {
+    padding-top: 16px;
+  }
+
+  /* feature 2 */
+  #feature-2 {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  #feature-2 > div > img {
+    width: 350px;
+  }
+
+  /* review  */
+  #review {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  /* office location */
+  #location-container {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .location-details {
+    width: 100%;
+  }
+
+  /* faq */
+
+  #faq-section {
+    padding: 0 12px;
+  }
+
+  /* mobile-app-advertisement */
+  #mobile-ad-container {
+    flex-direction: column;
+  }
+  #mobile-ad-deatils {
+    width: 100%;
+  }
+
+  #images-container {
+    width: 100%;
+    margin-top: 120px;
+    display: flex;
+  }
+
+  #mobile-2nd-img {
+    display: none;
+  }
+
+  #mobile-alternate {
+    display: block;
+    position: absolute;
+    left: 135px;
+    top: -90px;
+  }
+  #mobile-img-web {
+    display: none;
+  }
+
+  #mobile-alternate-1{
+    display: block;
+  }
+  /* footer */
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
+    padding: 16px;
+  }
+
+  #footer-last-line {
+    flex-direction: column;
+    gap: 32px;
+  }
 }
